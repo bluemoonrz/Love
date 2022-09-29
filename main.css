@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto";
+}
+
+:root {
+    --primary: #ee6755;
+    --secondary: #fff;
+
+    --dark-primary: #333;
+    --dark-secondary: #767676;
+    
+    --light-primary: #dadada;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-primary);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+nav > a:first-child { /* makes the icon & text centered (branding) */
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav > ul {
+    display: flex;
+    gap: 2.5rem;
+}
+nav > ul > li {
+    list-style: none;
+    transition: 200ms ease-in-out;
+}
+nav > ul > li:hover {
+    transform: scale(1.1);
+}
+
+.btn { /* download-button */
+    background-color: var(--primary);
+    color: var(--secondary);
+
+    padding: 1rem 1.7rem;
+    border-radius: 10rem;
+
+    font-weight: 700;
+    transition: 200ms ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.hamburger {
+    display: grid;
+    align-items: center;
+    
+    aspect-ratio: 1;
+
+    background-color: var(--light-primary);
+    padding: 10px;
+    border-radius: 10rem;
+}
+.hamburger > .bar {
+    height: 2px;
+    width: 20px;
+    background-color: var(--dark-primary);
+}
+
+@media (min-width: 1201px) {
+    nav {
+        padding: 1rem 4rem;
+    }
+    nav > ul {
+        gap: 3rem;
+    }
+}
+@media (min-width: 801px) {
+    .hamburger {
+        display: none;
+    }
+}
+@media (max-width: 801px) {
+    nav > ul {
+        display: none;
+    }
+    nav > .btn {
+        display: none;
+    }
+}
+
+
+/* Uhh... this section makes me kinda sick */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3.5rem;
+
+    width: 27%;
+    margin: auto;
+}
+header span {
+    color: var(--primary);
+}
+header > p {
+    font-size: 1.5rem;
+    
+    width: 37%;
+    margin: 1rem auto;
+}
+
+header > img {
+    margin: 3.5rem 0;
+    box-shadow: 1px 1px 10px var(--light-primary);
+
+    background-position: center;
+}
+
+header > a {
+    display: inline-block;
+    margin: 3rem 0;
+}
+
+hr {
+    width: 75%;
+    margin: auto;
+    color: var(--light-primary);
+}
+
+footer {
+    padding: 5rem 0;
+}
+
+@media (max-width: 1290px) {
+    header h1 {
+        min-width: 35%;
+        margin: auto;
+    }
+}
