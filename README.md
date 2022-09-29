@@ -6,7 +6,7 @@
 # Source
 [Front-end-Practice](https://www.frontendpractice.com/projects/lobe)
 
-# Leftover
-* Mobile responsive-navbar
+# Left-over Works
+* [] Mobile responsive-navbar
 * Mobile responsive-header
 * No-footer
